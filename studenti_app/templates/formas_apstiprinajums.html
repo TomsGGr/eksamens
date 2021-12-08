@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Studenta dati</title>
+</head>
+<body>
+<br><br>
+Students Nr. {{ student.id }} {{ pievienots }}<br>
+<b>{{ student.name }}</b><br>
+Atzīmes: {{ student.grades|cut:"["|cut:"]" }} (vidējā atzīme - {{ student.average_grade }})
+</body>
+</html>
